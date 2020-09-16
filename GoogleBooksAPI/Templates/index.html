@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+{{if .First}}
+USER NAME {{.UserName}}<br>
+Name {{.First}}&nbsp;{{.Last}}
+
+<h2><a href="/logout">log out</a></h2>
+<h2><a href="/API/v/Author">By Author</a></h2>
+{{else}}
+<h2><a href="/signup">sign up</a></h2>
+<h2><a href="/login">log in</a></h2>
+{{end}}
+
+<br>
+
+</body>
+</html>
