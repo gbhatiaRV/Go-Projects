@@ -205,7 +205,7 @@ func main() {
 	http.HandleFunc("/signup", signup)
 	http.HandleFunc("/login", login)
 	http.HandleFunc("/logout", logout)
-	http.HandleFunc("/API/v/Author", GoogleBooksByAuthor) //Google API for searching Author
+	http.HandleFunc("/Author", GoogleBooksByAuthor) //Google API for searching Author
 	http.ListenAndServe(":8080", nil)
 }
 
