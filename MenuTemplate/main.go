@@ -1,4 +1,4 @@
-package main
+upackage main
 
 import (
 	"html/template"
@@ -9,7 +9,7 @@ import (
 var tpl *template.Template
 
 func init() {
-	tpl = template.Must(template.ParseFiles("tpl.gohtml"))
+	tpl = template.Must(template.ParseFiles("menu.html"))
 }
 
 type dish struct {
