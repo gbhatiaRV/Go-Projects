@@ -119,7 +119,7 @@ func configureDB() *sql.DB {
 		fmt.Println("DB selected successfully..")
 	}
 
-	// cleaning prior session Data tables
+	// cleaning prior session Data tables - For testing purposes on Dev
 	drop(db, "Books")
 	drop(db, "Authors")
 	drop(db, "Publishers")
