@@ -3,7 +3,6 @@ package main
 import (
 	//"bufio"
 	"encoding/csv"
-	"flag"
 	"fmt"
 	"io"
 	"log"
@@ -14,9 +13,8 @@ func main() {
 	// Open the file
 	var fileName, userFileName string
 	fmt.Println("Enter CSV FileName")
-	fmt.Scanln(&userFileName)
-	flag.StringVar(&fileName, "fileName", userFileName, "CSV File")
-	flag.Parse()
+	fmt.Scanln(&userFileName) // If user wants to give the fileName
+	
 
 	if fileName == "" {
 		fileName = "problems.csv"
