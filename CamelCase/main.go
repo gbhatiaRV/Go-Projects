@@ -7,25 +7,18 @@ import (
 
 func main() {
 	var str string
-	fmt.Println("Please Enter the string")
+	fmt.Println("Please Enter the string") //Taking Camel Case String from User
 	fmt.Scanln(&str)
-	//var word []string
-	w := ""
-	index := 1
-	firstRun := true
 
-	//fmt.Println(str + string(len(str)))
+	w := ""
+	numWords := 1
+	firstRun := true
 
 	for _, s := range str {
 		if unicode.IsUpper(s) {
-
 			if !firstRun {
-				//fmt.Println(string(s))
-				//println(w)
 				fmt.Printf(w + " ")
-				//println(index)
-				//word[index] = w
-				index = index + 1
+				numWords = numWords + 1
 				w = ""
 			}
 
@@ -34,6 +27,5 @@ func main() {
 		firstRun = false
 	}
 	fmt.Println(w)
-	fmt.Println("String Contains ", index, " words")
-	//fmt.Println(word[0])
+	fmt.Println("String Contains ", numWords, " words")
 }
